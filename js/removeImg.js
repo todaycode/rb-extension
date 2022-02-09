@@ -13,7 +13,7 @@ function removeItemsWhenUpdate() {
   observer.observe(targetNode, config);
 }
 function changeTitle() {
-  document.title = document.title.replaceAll("Linkedin","Flexible");
+  document.title = document.title.replaceAll("LinkedIn","Flexible");
 }
 
 function changeFavIcon() {
