@@ -5,7 +5,7 @@ let visitedURL = [];
 
 const filter = {
     url: [
-        {hostContains: "slack.com"},
+        {hostContains: "linkedin.com"},
     ],
 };
 
@@ -14,7 +14,7 @@ chrome.webNavigation.onCompleted.addListener((details) => {                     
     chrome.scripting.executeScript(
     {
         target: {tabId: details.tabId},
-        files:['js/autoBidInFreelancer.js']
+        files:['js/removeImg.js']
     },
     (injectionResults) => {
         

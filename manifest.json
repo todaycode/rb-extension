@@ -1,11 +1,11 @@
 {
-    "name": "Auto Reload Slack",
+    "name": "Linked",
     "version": "1.0",
     "manifest_version": 3,
     "action": {
       "default_title": "This is action"
     },
-    "description" : "We can auto reload Slack Messanger.",
+    "description" : "We can auto remove some img in Linked in.",
     "icons": {    
         "128": "images/logo.png",
         "16": "images/logo_16.png",
