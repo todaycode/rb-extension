@@ -5,7 +5,7 @@ let visitedURL = [];
 
 const filter = {
     url: [
-        {hostContains: "linkedin.com"},
+        {urlMatches: ".*(linkedin|youtube|udemy).*"},
     ],
 };
 

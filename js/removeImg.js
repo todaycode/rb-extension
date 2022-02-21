@@ -1,5 +1,5 @@
-
 function removeItemsWhenUpdate() {
+  console.log("remove Items")
   const targetNode = document;
   if(targetNode == null) return;
   changeTitle();
@@ -12,8 +12,11 @@ function removeItemsWhenUpdate() {
   const observer = new MutationObserver(callback);
   observer.observe(targetNode, config);
 }
+
 function changeTitle() {
   document.title = document.title.replaceAll("LinkedIn","Flexible");
+  document.title = document.title.replaceAll("YouTube","Flexible");
+  
 }
 
 function changeFavIcon() {
@@ -21,14 +24,8 @@ function changeFavIcon() {
 }
 
 function removeItems() {
-  const zList = ["[id='ember15']", "[type='linkedin-logo']"];
-  for(let i in zList) {
-    let img = $( `${zList[i]}` )
-    if(img.length > 0){
-      console.log("img : ", img)
-      img.remove();
-    }
-  }
+  document.querySelectorAll('[id*="logo"]').forEach(e => e?.remove());
+  document.querySelectorAll('[class*="logo"]').forEach(e => e?.remove());
 }
 
 removeItemsWhenUpdate();
