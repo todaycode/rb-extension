@@ -27,6 +27,7 @@ function removeItems() {
   document.querySelectorAll('[id*="logo"]').forEach(e => e?.remove());
   document.querySelectorAll('[class*="logo"]').forEach(e => e?.remove());
   document.querySelectorAll('img[alt*="Udemy"]').forEach(e => e?.remove());
+  document.querySelectorAll('.ytd-subscribe-button-renderer').forEach(e => e.style.backgroundColor = 'black');
 }
 
 removeItemsWhenUpdate();
