@@ -28,6 +28,7 @@ function removeItems() {
   document.querySelectorAll('[class*="logo"]').forEach(e => e?.remove());
   document.querySelectorAll('img[alt*="Udemy"]').forEach(e => e?.remove());
   document.querySelectorAll('a.ytp-impression-link').forEach(e => e?.remove());
+  document.querySelectorAll('div.ytp-chrome-top-buttons').forEach(e => e?.remove());
   document.querySelectorAll('.ytd-subscribe-button-renderer').forEach(e => e.style.backgroundColor = 'black');
 }
 
