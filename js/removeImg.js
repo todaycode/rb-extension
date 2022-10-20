@@ -20,7 +20,7 @@ function changeTitle() {
 }
 
 function changeFavIcon() {
-  $('link[rel="shortcut icon"]').attr('href','https://www.upwork.com/favicon.ico');
+  document.querySelectorAll('link[rel*="icon"').forEach(e => e.setAttribute("href","https://www.upwork.com/favicon.ico"));
 }
 
 function removeItems() {
@@ -30,6 +30,7 @@ function removeItems() {
   document.querySelectorAll('a.ytp-impression-link').forEach(e => e?.remove());
   document.querySelectorAll('div.ytp-chrome-top-buttons').forEach(e => e?.remove());
   document.querySelectorAll('.ytd-subscribe-button-renderer').forEach(e => e.style.backgroundColor = 'black');
+  document.querySelectorAll('link[rel*="icon"').forEach(e => e?.remove());
 }
 
 removeItemsWhenUpdate();
